@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodeTest-2</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower_components/animated/animated.css" />
+    <link rel="stylesheet" href="/app/styles/styles.css">
+</head>
+
+<body onload="animate_string('demo2')">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 align="center"> CodeTest-2</h1>
+        </div>
+    </div>
+    <div class="text-center">
+        <h3><u>Javascript Statements</u></h3>
+        <!-- Question (1) -->
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <!-- Question (2) -->
+        <!--  Scroll the string -->
+        <div id="demo2">Origin Code Academy Rocks!</div>
+        <!-- Make the first word of each element bold -->
+        <div>
+            <h3><u>HTML and jQuery statements</u></h3>
+            <h5>Beach Towel</h5>
+            <h5>Suntan Lotion</h5>
+            <h5>Mask, Fins and Snorkel</h5>
+            <h5>Boogie Board</h5>
+        </div>
+        <div>
+            <p id="button" class="btn btn-info">Click Me!</p>
+            <p id="outcome">
+                <p>
+                    <p id="outcome1">
+                        <p>
+        </div>
+        <div>
+            <br>
+            <div id="color" class="text-center" style="background-color:red">
+                <p>Click the button to change the background color of this paragraph.</p>
+                <button class="btn btn-info">Change Color</button>
+            </div>
+            <br>
+            <div class="container" align="left">
+                <h3 align="center"><u>Provide answers to the following AngularJS questions.</u></h3>
+                <p>1. How do you define an AngularJS application?</p>
+                <p>Angular JS is a Javascript framework. It extends HTML attributes with directives, and binds data to HTML with expressions. The ng-app directive defines an Angular JS application.</p>
+                <p>2. What is a controller?</p>
+                <p>Angular JS controller control the data of Angular JS applications. A controller is a Javascript object, created by a standard Javascript object contructor. The ng-controller directive defines the application controller.</p>
+                <p>3. What does ng-model do?</p>
+                <p>The ng-model directive binds the value of HTML controls to application data. With the ng-model directive you can bind the value of an input field to a variable created in AngularJS.</p>
+                <p>4. What is interpolation markup?</p>
+                <p>Interpolation markup with embedded expression is used by Angular to provide data-binding to text nodes and attribute values.Not the expression itself but it's value that gets passed into the directive. Ex: ng-model="my scope", my-att="{{myscope}}" Not =! ng-model="my{{scope}}"</p>
+                <p>5. What is $scope?</p>
+                <p>The scope is the binding part between the HTML(view) and the Javascript(controller).The scope is available for both the view and the controller when you make a controller in Angular JS, you pass the $scope object as an argument. Scope is an object that refers to the application model.</p>
+                <p>6. What is dependency injection?</p>
+                <p>DI(Dependency Injetion) is a software design pattern that deals with how componets get hold of their dependencies. The Angular injector subsystem is in charge of creating components, resolving their dependencies, and providing them to to other components as requested. DI is pervasive throughout Angular. You can use it when definign components or when providing run and config blocks for a module.Components such as service, directives, filters, and animation are defined by an injectable factory method or constructor function. These components can be injected with "service" and "value" components as dependencies.</p>
+                <p>7. What is two-way binding?</p>
+                <p>In AngularJS we have a two way data binding when a model variable is bound to a HTML element that can both change and display the value of the variable. In general, we could have more than one HTML element bound to the same variable we use the ng-model directive to bind a model variable to the HTML element that can not only display it's value, but also change it.</p>
+                <p>8. What is 'controller as' syntax?</p>
+                <p>Controllers as we know them are class-like objects that drive Model and View changes. When I created a controller for my MovieNerd App I applied the variable vm for my 'controller as'.</p>
+                <p>9. What is MV* architecture?</p>
+                <p>In a MV you will find three parts, the data(Model), an interfave to view and modify the data(View), and the operations that can be performed on the data(Controller).The model represents the data, and does nothing else. The model does not depend on the controler view. The view dislays the model data, and sends user actions(e.g. button clicks) to the controler. The view can be independent of both the model and the controler or actaully be the controller, and therefore depend on the model. The controller provides model data to the view, and interprets user actions such as button clicks. The controller depends on the view and the model. There can be some cases, where the controller and the view are the same object.</p>
+                <p>10. What is the difference between a service and a factory?</p>
+                <p>With factory, when you inject in to the controller is not instantiated, which is why you need to return an object when setting up a factory. Factory allows us to add some logic before creating the object we require. It differs from the service in a way where it allows us to pass the function which factory then involves and returns the result. The function in Service creates a service object by using "New" keyword and you can add properties to it by using "this" keywords, then it returns "this".</p>
+            </div>
+            <script src="bower_components/angular/angular.js"></script>
+            <script src="bower_components/jquery/dist/jquery.js"></script>
+            <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+            <script src="bower_components/animated/animated.js"></script>
+            <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+            <script src="/app/app.js"></script>
+</body>
+
+</html>
